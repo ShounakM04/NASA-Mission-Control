@@ -1,12 +1,12 @@
 name: NASA project CI
 on: 
     push:
-        branches: [ master ]
+        branches: [ main ]
     pull_request: 
-        branches: [ master ]
+        branches: [ main ]
 jobs:
     build:
-        runs-on: ubuntu-latest
+        runs-on: windows-latest
         steps:
             - uses: actions/checkout@v3
             - name: Use Node.js version 20
